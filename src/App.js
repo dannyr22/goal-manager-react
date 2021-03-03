@@ -36,7 +36,7 @@ function App() {
     <>
       <GlobalStyle />
       <StyledH1>My Goals</StyledH1>
-      {goals.map(goal => (
+      {goals.length > 0 && goals.map(goal => (
         <Goal
           key={goal.id}
           goal={goal}
